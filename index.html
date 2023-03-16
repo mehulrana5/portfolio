@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/pg2.css">
+    <link rel="stylesheet" href="./css/pg3.css">
+    <link rel="stylesheet" href="./css/burger.css">
+    <link rel="stylesheet" href="./css/mobile.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="bar-container" onclick="burger_nav()">
+        <div class="bar1 bars"></div>
+        <div class="bar2 bars"></div>
+        <div class="bar3 bars"></div>
+    </div>
+    <div id="page1" class="pages">
+        <nav>
+            <ul>
+                <li id="op1" class="ops active-op" onclick="Navop(0)">Home</li>
+                <li id="op2" class="ops" onclick="Navop(1)">About</li>
+                <li id="op3" class="ops" onclick="Navop(2)">Projects</li>
+            </ul>
+        </nav>
+        <img class="user_img" src="./img/img1.jpeg" alt="">
+        <div class="user-img-mobile"></div>
+        <div class="intro">
+            <p>
+                Hi, i am mehul
+            </p>
+            <p>
+                From India
+            </p>
+            <p>
+                Backend Developer
+            </p>
+        </div>
+    </div>
+    <div id="page2" class="pages">
+        <div id="about" class="container">
+            <div class="top-sec">
+                <h2>
+                    About Me
+                </h2>
+                <hr>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi ducimus nobis, architecto ipsum deleniti beatae nihil quam recusandae magnam iste error a facilis similique, porro hic dolor iusto veniam molestias nam minima perferendis iure?
+                </p>
+                <hr>
+                <div class="tab-links-holder">
+                    <p class="tab-links active-tab-link" onclick="tab_link_ops(0)">Languages</p>
+                    <p class="tab-links" onclick="tab_link_ops(1)">Skills</p>
+                    <p class="tab-links" onclick="tab_link_ops(2)">CV</p>
+                </div>
+            </div>
+            <div class="tab-links-content-holder">
+                <div class="tab-link-content active-content">
+                    <ul>
+                        <li id="skill1" class="skills">
+                            <p>
+                                C++
+                            </p>
+                            <progress id="elem" max="100" min="0" value="90"></progress>
+                            <span class="skill-percentage"></span>
+                        </li>
+                        <li id="skill2" class="skills">
+                            <p>
+                                Python
+                            </p>
+                            <progress id="elem" max="100" min="0" value="40"></progress>
+                            <span class="skill-percentage"></span>
+                        </li>
+                        <li id="skill3" class="skills">
+                            <p>
+                                HTML
+                            </p>
+                            <progress id="elem" max="100" min="0" value="80"></progress>
+                            <span class="skill-percentage"></span>
+                        </li>
+                        <li id="skill4" class="skills">
+                            <p>
+                                CSS
+                            </p>
+                            <progress id="elem" max="100" min="0" value="80"></progress>
+                            <span class="skill-percentage"></span>
+                        </li>
+                        <li id="skill5" class="skills">
+                            <p>
+                                Java Script
+                            </p>
+                            <progress id="elem" max="100" min="0" value="60"></progress>
+                            <span class="skill-percentage"></span>
+                        </li>
+                        <li id="skill6" class="skills">
+                            <p>
+                                Node Js
+                            </p>
+                            <progress id="elem" max="100" min="0" value="30"></progress>
+                            <span class="skill-percentage"></span>
+                        </li>
+                        <li id="skill7" class="skills">
+                            <p>
+                                REACT
+                            </p>
+                            <progress id="elem" max="100" min="0" value="70"></progress>
+                            <span class="skill-percentage"></span>
+                        </li>
+                        <li id="skill8" class="skills">
+                            <p>
+                                Mongo Db
+                            </p>
+                            <progress id="elem" max="100" min="0" value="40"></progress>
+                            <span class="skill-percentage"></span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-link-content">
+                    <ul>
+                        <li id="skill_1" class="Skill">Problem solving</li>
+                        <li id="skill_2" class="Skill">Data structures</li>
+                        <li id="skill_3" class="Skill">MERN stack</li>
+                    </ul>
+                </div>
+                <div class="tab-link-content">
+                    <ul>
+                        <li>Name:</li>
+                        <li>Address:</li>
+                        <li>Email:</li>
+                        <li>Phone no.:</li>
+                        <li>Education:</li>
+                    </ul>
+                    <span class="download-btn">Download<img src="./img/img2.png" alt="" srcset=""></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="page3" class="pages">
+        <div id="proj">
+            <h2>
+                Projects
+            </h2>
+        </div>
+    </div>
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollToPlugin.min.js"></script>
+<script src="./js/index.js"></script>
+<script src="./js/2.js"></script>
+</html>

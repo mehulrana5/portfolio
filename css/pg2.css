@@ -1,0 +1,93 @@
+@import url(./root.css);
+#page2{
+    display: flex;
+}
+.container{
+    /* border: green solid; */
+    background-color:var(--bgc2);
+    width: 100%;
+    padding:var(--pad1);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    font-size:var(--fs2);
+}
+.tab-links-holder{
+    display: flex;
+}
+.tab-links{
+    margin-right: 20px;
+    font-weight: 900;
+    font-size:var(--fs1);
+    padding: 3px;
+    cursor: pointer;
+    position: relative;
+}
+.tab-links::after{
+    content:'';
+    position:absolute;
+    width:0;
+    height: 3px;
+    background-color: var(--bgc3);
+    left: 0;
+    bottom:0;
+    transition: 0.5s;
+}
+.tab-links.active-tab-link::after{
+    width: 50%;
+}
+.tab-links-content-holder{
+    /* border: blue solid; */
+    height:70%;
+    overflow-y:auto;
+}
+.tab-link-content{
+    display: none;
+    padding: 0 var(--pad1);
+    width: 70%;
+}
+.tab-link-content>ul{
+    list-style: none;
+}
+.active-content{
+    display:block;
+}
+.download-btn{
+    background-color: white;
+    color: black;
+    font-weight: 600;
+    padding: 1em;
+    /* margin: auto; */
+    display: flex;
+    width: 140px;
+    height: 50px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+    float: right;
+    /* margin: 2%; */
+}
+.download-btn img{
+    width: 25px;
+    height: 25px;
+}
+.download-btn:hover{
+    filter: invert(1);
+}
+/* .skills {
+    margin-bottom: 10px;
+    position: relative;
+  } */
+progress {
+    /* width: 100%; */
+    height: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+  
+progress::-webkit-progress-value {
+    background: linear-gradient(to right, #006eff9f, #0051ff);
+    border-radius: 10px;
+}
+

@@ -1,0 +1,26 @@
+.bar-container{
+    display: none;
+    position: fixed;
+    /* display:block; */
+    padding: 5px;
+    z-index: 2;
+    margin:5%;
+}
+.bars{
+    width: 40px;
+    height: 5px;
+    margin-bottom: 7px;
+    border-radius: 10px;
+    background-color: white;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+.bar1.open{
+    transform: rotate(45deg) translate(10px, 10px);
+}
+.bar2.open{
+    opacity: 0;
+}
+.bar3.open{
+    transform: rotate(-45deg) translate(7.5px, -7.5px);
+}
