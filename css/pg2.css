@@ -43,7 +43,6 @@
 }
 .tab-link-content{
     display: none;
-    padding: 0 var(--pad1);
     width: 70%;
 }
 .tab-link-content>ul{
@@ -57,27 +56,18 @@
     color: black;
     font-weight: 600;
     padding: 1em;
-    /* margin: auto; */
     display: flex;
     width: 140px;
-    height: 50px;
-    border-radius: 20px;
     cursor: pointer;
     transition: .3s ease-in-out;
-    float: right;
-    /* margin: 2%; */
 }
-.download-btn img{
-    width: 25px;
-    height: 25px;
+.download-btn>a{
+    text-decoration: none;
+    color: black;
 }
 .download-btn:hover{
     filter: invert(1);
 }
-/* .skills {
-    margin-bottom: 10px;
-    position: relative;
-  } */
 progress {
     /* width: 100%; */
     height: 10px;

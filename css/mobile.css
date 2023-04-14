@@ -1,5 +1,5 @@
 @import url(./root.css);
-@media (max-width:500px){
+@media (max-width:700px){
     :root{
         --pad1:2em;
         --pad2:1em;
@@ -58,11 +58,11 @@
         padding: .5em;
     }
 }
-@media (min-width:501px) and (max-width:1000px) {
+/* @media (min-width:501px) and (max-width:1000px) {
     :root{
         --fs2:2em;
         --pad1:2.5em;
         --pad2:1em;
         --pad3:.5em;
     }   
-}
+} */
