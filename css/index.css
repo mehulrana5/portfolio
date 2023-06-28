@@ -50,7 +50,7 @@ nav>ul>li:hover{
     top:10%;
     /* border: green solid; */
     width:40%;
-    border-radius: 50%;
+    border-radius:40px;
 }
 .intro{
     /* border: red solid; */
