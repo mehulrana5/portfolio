@@ -5,3 +5,8 @@
     padding:5em;
     font-size: var(--fs2);
 }
+#proj{
+    /* border: red solid; */
+    width: 100%;
+    overflow-x: auto;
+}

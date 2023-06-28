@@ -35,23 +35,4 @@ document.addEventListener('DOMContentLoaded', () => {
         value: 0
     });
 })
-// window.addEventListener('scroll', function() {
-//     if (window.scrollY > 0) {
-//         console.log("Scroll value:", window.scrollY);
-//     }
-// });
-function getContainerScroll(container) {
-    if (container === window) {
-        // If the container is the window, use window.scrollY
-        return window.scrollY;
-    } else {
-        // Otherwise, use container.scrollTop and container.getBoundingClientRect()
-        const rect = container.getBoundingClientRect();
-        const scrollTop = container.scrollTop || 0;
-        return rect.top + scrollTop;
-    }
-}
 
-const myContainer = document.querySelector('#page3');
-const scrollValue = getContainerScroll(myContainer);
-// console.log("Scroll value of my-container:", scrollValue);
